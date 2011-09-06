@@ -23,7 +23,7 @@
 #define TWITPIC_API_KEY kTwitPicAPIKey
 
 // TwitPic API Version: http://dev.twitpic.com/docs/
-#define TWITPIC_API_VERSION @"2"
+#define TWITPIC_API_VERSION @"1"
 
 // Enable one of the JSON Parsing libraries that the project has.
 // Disable all to get raw string as response in delegate call to parse yourself.

@@ -9,7 +9,7 @@
 #import "GSTwitPicEngine.h"
 
 #if TWITPIC_USE_YAJL
-#import "NSObject+YAJL.h"
+#import <YAJLiOS/YAJL.h>
 
 #elif TWITPIC_USE_SBJSON
 #import "JSON.h"
