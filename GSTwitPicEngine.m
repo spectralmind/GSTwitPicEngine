@@ -31,12 +31,12 @@
 
 @synthesize _queue;
 
-+ (GSTwitPicEngine *)twitpicEngineWithDelegate:(NSObject *)theDelegate {
++ (GSTwitPicEngine *)twitpicEngineWithDelegate:(NSObject<GSTwitPicEngineDelegate> *)theDelegate {
   return [[[self alloc] initWithDelegate:theDelegate] autorelease];
 }
 
 
-- (GSTwitPicEngine *)initWithDelegate:(NSObject *)delegate {
+- (GSTwitPicEngine *)initWithDelegate:(NSObject<GSTwitPicEngineDelegate> *)delegate {
   if (self = [super init]) {
     _delegate = delegate;
     _queue = [[ASINetworkQueue alloc] init];

@@ -58,8 +58,8 @@
 
 @property (retain) ASINetworkQueue *_queue;
 
-+ (GSTwitPicEngine *)twitpicEngineWithDelegate:(NSObject *)theDelegate;
-- (GSTwitPicEngine *)initWithDelegate:(NSObject *)theDelegate;
++ (GSTwitPicEngine *)twitpicEngineWithDelegate:(NSObject<GSTwitPicEngineDelegate> *)theDelegate;
+- (GSTwitPicEngine *)initWithDelegate:(NSObject<GSTwitPicEngineDelegate> *)theDelegate;
 
 - (void)uploadPicture:(UIImage *)picture;
 - (void)uploadPicture:(UIImage *)picture withMessage:(NSString *)message;
